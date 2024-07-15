@@ -1,0 +1,124 @@
+.main{
+    background: url('../img/main/background.png')  no-repeat;
+    background-position: bottom 180px right 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.integration_TG {
+    padding-top: 80px;
+    position: relative;
+    margin-bottom: 265px;
+    text-align: center;
+}
+
+.integration_TG__text {
+    max-width: 700px;
+    margin: 23px auto 165px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.integration_TG__row {
+    margin: 0 auto;
+    display: flex;
+    column-gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.integration_TG__block_phone {
+    width: 500px;
+}
+
+.integration_TG__block_phone img {
+    position: absolute;
+    bottom: -100px;
+    right: 750px;
+}
+
+.integration_TG__block_info {
+    width: 500px;
+    text-align: left;
+}
+
+.integration_TG__block_info .tg {
+    margin-bottom: 24px;
+}
+
+.integration_TG__block_info__title {
+    margin-bottom: 19px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.integration_TG__block_info__text {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+@media(max-width: 430px) {
+
+    .main {
+        background-position: bottom 1000px right 0px;
+    }
+
+    .integration_TG {
+        padding-top: 83px;
+        margin-bottom: 193px;
+    }
+
+    .integration_TG__text {
+        margin: 24px 0 19px;
+    }
+
+    .integration_TG__row {
+        margin-top: 83px;
+        flex-direction: column;
+    }
+    
+    .integration_TG__block_phone {
+        width: auto;
+        order: 2;
+    }
+
+    .integration_TG__block_phone img {
+        width: 449px;
+        top: 465px;
+        right: 200px;
+    }
+
+    .integration_TG__block_info {
+        order: 1;
+        width: auto;
+        text-align: center;
+    }
+
+    .tg {
+        width: 118px;
+        margin: 0 auto;
+    }
+    
+    .integration_TG__block_info .tg {
+        margin-bottom: 16px;
+    }
+
+    .integration_TG__block_info__title {
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 180%;
+    }
+
+    .integration_TG__block_info__text {
+        margin: 0 auto;
+        width: 370px;
+        font-size: 12px;
+    }
+
+    .integration_TG__block_info__text:last-child {
+        margin-top: 10px;
+    }
+}

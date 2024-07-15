@@ -1,0 +1,39 @@
+.connect {
+    margin: 0 auto 217px;
+    text-align: center;
+}
+
+.connect__title {
+    margin-bottom: 23px;
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+.conntect__text {
+    margin-bottom: 33px;
+    font-family: 'Inter-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 156%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.connect__or {
+    margin: 24px 0;
+    font-family: 'Inter-Regular', sans-serif;
+    line-height: 125%;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@media(max-width: 430px) {
+    .connect {
+        padding: 35px 0 48px;
+        margin: 0;
+    }
+
+    .conntect__text {
+        margin-bottom: 52px;
+    }
+
+    .connect .btn {
+        padding: 12px 65px;
+    }
+}

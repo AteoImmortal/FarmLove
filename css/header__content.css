@@ -1,0 +1,43 @@
+.header__content {
+    max-width: 908px;
+    padding-top: 176px;
+    margin: 0 auto 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__content .logo__heart {
+    width: 46px;
+}
+
+.header__content_text {
+    margin-bottom: 52px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header__content_btns {
+    display: flex;
+    column-gap: 16px;
+}
+
+
+
+@media(max-width: 430px) {
+
+    .header__content {
+        padding-top: 63px;
+        margin-bottom: 30px;
+    }
+
+    .header__content .logo__heart {
+        width: 27px;
+    }
+
+    .header__content_text {
+        width: 321px;
+        margin-bottom: 24px;
+        font-size: 14px;
+    }
+}
