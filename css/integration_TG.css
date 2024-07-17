@@ -60,7 +60,7 @@
 }
 
 
-@media(max-width: 430px) {
+@media(max-width: 768px) {
 
     .main {
         background-position: bottom 884px center;

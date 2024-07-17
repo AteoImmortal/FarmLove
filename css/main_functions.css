@@ -160,7 +160,7 @@
 }
 
 
-@media(max-width: 430px) {
+@media(max-width: 768px) {
 
     .main_functions {
         padding-top: 116px;

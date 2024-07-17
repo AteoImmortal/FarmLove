@@ -89,7 +89,7 @@ body {
     font-size: 36px;
 }
 
-@media(max-width: 430px) {
+@media(max-width: 768px) {
     
     .container {
         margin: 0 auto;
