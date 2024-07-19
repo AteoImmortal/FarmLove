@@ -237,7 +237,9 @@
     }
 
     .main_functions__proof_location, .main_functions__proof_money {
+        width: 360px;
         padding: 64px 25px 101px;
+        margin: 0 auto;
     }
 
     .main_functions__proof_location__photo, .main_functions__proof_money__photo {

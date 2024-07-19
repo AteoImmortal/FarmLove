@@ -2,6 +2,7 @@ const languageScroll = document.querySelector('.language');
 const languageList = document.querySelector('.language__list');
 const mobileNavBtns = document.querySelectorAll('.nav__mobile__btn');
 const mobileNavList = document.querySelector('.menu');
+const mobileNavLink = document.querySelectorAll('.nav__mobile__item');
 const overlayMobile = document.querySelector('.overlay_mobile');
 const navMobileLanguageBtn =document.querySelector('.nav__mobile__item_language__btn');
 const navMobileLanguage = document.querySelector('.nav__mobile__language');
@@ -36,6 +37,17 @@ for(let button of mobileNavBtns) {
     })
 }
 
+for(let button of mobileNavLink) {
+    button.addEventListener('click', ()=>{
+        mobileNavList.classList.add('menu--close');
+        overlayMobile.classList.remove('overlay-mobile--active');
+    })
+}
+
+overlayMobile.addEventListener( 'click', (e) => {
+    overlayMobile.classList.remove('overlay-mobile--active');
+    mobileNavList.classList.add('menu--close');
+})
 
 
 navMobileLanguageBtn.addEventListener('click', ()=>{
