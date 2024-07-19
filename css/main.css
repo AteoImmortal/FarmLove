@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 li {
@@ -92,14 +91,14 @@ body {
 }
 
 
-@media(max-width: 1024px) {
+@media(max-width: 1280px) {
 
     .container {
         max-width: 980px;
     } 
 }
 
-@media(max-width: 960px) {
+@media(max-width: 980px) {
     
     .container {
         max-width: 430px;
@@ -131,7 +130,7 @@ body {
 }
 
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
 
     .container {
         width: 320px;

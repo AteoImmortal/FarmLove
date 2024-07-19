@@ -32,7 +32,6 @@
     width: 100%;
     padding: 108px 0;
     display: flex;
-    column-gap: 40px;
 
     border-radius: 12px;
     background: linear-gradient(120deg, #ffa7a7 2.2%, #a30cb5 29.17%, #00173a 95.31%);
@@ -73,8 +72,12 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-.main_functions__proof_photo_info__btn {
-    max-width: 170px;
+.main_functions__proof_money .main_functions__proof__text{
+    max-width: 595px;
+}
+
+a.main_functions__proof_photo_info__btn {
+    max-width: 180px;
     padding: 12px 20px;
     text-align: center;
     font-weight: 500;
@@ -87,7 +90,9 @@
 
 .main_functions__steps_verification {
     position: absolute;
-    right: -85px;
+    left: 543px;
+
+    width: 748px;
     border: 1px solid rgba(143, 141, 145, 0.2);
     border-radius: 12px;
     backdrop-filter: blur(72px);
@@ -127,7 +132,7 @@
 }
 
 .main_functions__proof_location {
-    max-width: 396px;
+    max-width: 460px;
     position: relative;
 }
 
@@ -151,7 +156,7 @@
 }
 
 .main_functions__proof_money {
-    max-width: 532px;
+    flex: 1;
 }
 
 .main_functions__proof_money__photo {
@@ -159,25 +164,34 @@
     margin-top: 33px;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1280px) {
+    
+    .main_functions__proof_photo {
+        column-gap: 40px;
+    }
 
     .main_functions__proof_photo_info {
-        width: 310px;
+        max-width: 310px;
     }
     
     .main_functions__steps_verification {
-        width: 600px;
-        right: 0px;
+        position: relative;
+        left: 0;
+        max-width: 600px;
     }
 
     .main_functions__steps_verification__img {
-        width: 300px;
+        max-width: 300px;
         height: 310px;
+    }
+    
+    .main_functions__proof_money {
+        max-width: 503px;
     }
 }
 
 
-@media(max-width: 960px) {
+@media(max-width: 980px) {
 
     .main_functions {
         padding-top: 116px;
@@ -237,7 +251,7 @@
     }
 
     .main_functions__proof_location, .main_functions__proof_money {
-        width: 360px;
+        width: 393px;
         padding: 64px 25px 101px;
         margin: 0 auto;
     }
@@ -249,7 +263,7 @@
 }
 
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
     
     .main_functions__proof {
         max-width: 320px;

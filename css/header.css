@@ -202,7 +202,7 @@
 }
 
 
-@media(max-width: 960px) {
+@media(max-width: 980px) {
 
     .nav .container {
         box-sizing: border-box;
@@ -231,7 +231,7 @@
 
     .nav__mobile__language {
         top: -40px;
-        right: 184px;
+        right: 175px;
     }
 
     .nav__mobile__language--active {
@@ -249,7 +249,7 @@
     
 }
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
 
     .menu {
         width: 300px;

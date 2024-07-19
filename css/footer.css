@@ -41,14 +41,14 @@
     gap: 23.8px;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1280px) {
 
     .footer .container {
         width: 980px;
     }
 }
 
-@media(max-width: 960px) {
+@media(max-width: 980px) {
     .footer .container {
         max-width: 430px;
         margin: 35px auto;
@@ -100,7 +100,7 @@
 }
 
 
-@media(max-width: 375px) {
+@media(max-width: 430px) {
 
     .footer .container {
         max-width: 320px;
