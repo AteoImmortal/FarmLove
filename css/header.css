@@ -4,7 +4,6 @@
 
 .nav {
     margin: 0 auto;
-    max-width: 1440px;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -12,6 +11,7 @@
 }
 
 .nav .container {
+    box-sizing: border-box;
     padding: 16px 80px;
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,7 @@
 }
 
 .language__list {
-    width: 130px;
+    max-width: 130px;
     position: absolute;
     top: 30px;
     left: 18px;
@@ -122,7 +122,7 @@
 }
 
 .nav__mobile__btn {
-    width: 22px;
+    max-width: 22px;
     margin-top: 7px;
 }
 
@@ -150,6 +150,7 @@
 
 .nav__mobile__item_language {
     position: relative;
+    background-color: #000;
 }
 
 .nav__mobile__item_language__btn {
@@ -178,7 +179,7 @@
 
 .nav__mobile__item_language__btn {
     text-align-last: left;
-    width: 320px;
+    max-width: 320px;
     background-color: #000000;
 }
 
@@ -201,7 +202,7 @@
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 960px) {
 
     .nav .container {
         box-sizing: border-box;
@@ -228,6 +229,16 @@
         display: block;
     }
 
+    .nav__mobile__language {
+        top: -40px;
+        right: 187px;
+    }
+
+    .nav__mobile__language--active {
+        transition: top .3s linear;
+        top: 35px;
+    }
+
     .language__item:first-child {
         border: none;
     }
@@ -236,4 +247,11 @@
         color: #fff;
     }
     
+}
+
+@media(max-width: 375px) {
+
+    .menu {
+        width: 300px;
+    }
 }

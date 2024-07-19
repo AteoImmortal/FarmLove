@@ -8,7 +8,7 @@
 .useful_links__block {
     border-radius: 12px;
     padding: 48px;
-    width: 592px;
+    max-width: 592px;
     transition: all 0.4s ease;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .useful_links__text {
-    width: 496px;
+    max-width: 496px;
     font-family: "Inter-Regular", sans-serif; 
     font-size: 15px;
     line-height: 150%;
@@ -57,7 +57,7 @@
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 960px) {
 
     .useful_links {
         margin: 168px 0 80px;
@@ -65,14 +65,14 @@
     }
 
     .useful_links__block{
-        width: 390px;
+        max-width: 390px;
         padding: 48px 30px 37px 48px;
         margin: 0 auto;
         box-sizing: border-box;
     }
 
     .useful_links__img {
-        width: 37px;
+        max-width: 37px;
     }
 
     .useful_links__title {

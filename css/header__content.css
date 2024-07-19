@@ -23,8 +23,7 @@
 }
 
 
-
-@media(max-width: 768px) {
+@media(max-width: 960px) {
 
     .header__content {
         padding-top: 63px;
@@ -36,8 +35,17 @@
     }
 
     .header__content_text {
-        width: 321px;
+        max-width: 295px;
         margin-bottom: 24px;
         font-size: 14px;
+    }
+}
+
+
+@media(max-width: 375px) {
+
+    .header__content_btns {
+        flex-direction: column;
+        row-gap: 15px;
     }
 }

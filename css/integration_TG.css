@@ -60,7 +60,7 @@
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 960px) {
 
     .main {
         background-position: bottom 884px center;
@@ -86,7 +86,7 @@
     }
 
     .integration_TG__block_phone img {
-        width: 449px;
+        max-width: 449px;
         top: 465px;
         right: 200px;
     }
@@ -114,11 +114,31 @@
 
     .integration_TG__block_info__text {
         margin: 0 auto;
-        width: 370px;
+        max-width: 370px;
         font-size: 12px;
     }
 
     .integration_TG__block_info__text:last-child {
         margin-top: 10px;
+    }
+}
+
+@media(max-width: 375px) {
+
+    .integration_TG__block_info {
+        max-width: 320px;
+    }
+
+    .integration_TG__block_info__text {
+        max-width: 290px;
+    }
+
+    .integration_TG__block_phone img {
+        top: 547px;
+        right: 100px;
+    }
+    
+    .security_privacy__text {
+        max-width: 290px;
     }
 }

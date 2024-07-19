@@ -1,5 +1,4 @@
 .footer {
-    max-width: 1440px;
     margin: 0 auto;
     background: #0d0e14;
 }
@@ -42,14 +41,22 @@
     gap: 23.8px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
+
     .footer .container {
-        width: auto;
+        width: 980px;
+    }
+}
+
+@media(max-width: 960px) {
+    .footer .container {
+        max-width: 430px;
+        margin: 35px auto;
+
     }
 
     .footer {
         border-top: 1px solid #1a1c29;
-        padding: 35px 20px;
         backdrop-filter: blur(10.899999618530273px);
     }
 
@@ -88,4 +95,16 @@
         order: 2;
     }
 
+}
+
+
+@media(max-width: 375px) {
+
+    .footer .container {
+        max-width: 320px;
+    }
+
+    .footer .nav__list {
+        display: none;
+    }
 }

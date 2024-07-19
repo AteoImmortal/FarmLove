@@ -9,7 +9,7 @@
 
 .main_functions__text {
     margin: 0 auto 96px;
-    width: 800px;
+    max-width: 800px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -21,7 +21,7 @@
 
 .main_functions__proof {
     margin-bottom: 177px;
-    width: 1216px;
+    max-width: 1216px;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -46,7 +46,7 @@
 }
 
 .main_functions__proof_svg {
-    width: 64px;
+    max-width: 64px;
     height: 64px;
     display: flex;
     border-radius: 16px;
@@ -55,7 +55,7 @@
 
 .main_functions__proof_svg img {
     margin: auto;
-    width: 32px;
+    max-width: 32px;
     height: 32px;
     border-radius: 100px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
@@ -69,12 +69,12 @@
 }
 
 .main_functions__proof__text {
-    width: 429px;
+    max-width: 429px;
     color: rgba(255, 255, 255, 0.8);
 }
 
 .main_functions__proof_photo_info__btn {
-    width: 170px;
+    max-width: 170px;
     padding: 12px 20px;
     text-align: center;
     font-weight: 500;
@@ -108,7 +108,7 @@
 
 .main_functions__steps_verification__list {
     margin-bottom: 75px;
-    width: 376px;
+    max-width: 376px;
     padding-top: 11px;
     display: flex;
     flex-direction: column;
@@ -127,12 +127,12 @@
 }
 
 .main_functions__proof_location {
-    width: 396px;
+    max-width: 396px;
     position: relative;
 }
 
 .main_functions__proof_location .main_functions__proof__text {
-    width: 310px;
+    max-width: 310px;
 }
 
 .main_functions__proof_location__photo {
@@ -151,7 +151,7 @@
 }
 
 .main_functions__proof_money {
-    width: 532px;
+    max-width: 532px;
 }
 
 .main_functions__proof_money__photo {
@@ -159,8 +159,25 @@
     margin-top: 33px;
 }
 
+@media(max-width: 1024px) {
 
-@media(max-width: 768px) {
+    .main_functions__proof_photo_info {
+        width: 310px;
+    }
+    
+    .main_functions__steps_verification {
+        width: 600px;
+        right: 0px;
+    }
+
+    .main_functions__steps_verification__img {
+        width: 300px;
+        height: 310px;
+    }
+}
+
+
+@media(max-width: 960px) {
 
     .main_functions {
         padding-top: 116px;
@@ -175,7 +192,7 @@
     }
 
     .main_functions__proof {
-        width: 393px;
+        max-width: 393px;
         padding-bottom: 132px;
         margin: 0 auto;
     }
@@ -207,11 +224,11 @@
     }
 
     .main_functions__proof__text {
-        width: 329px;
+        max-width: 329px;
     }
 
     .main_functions__proof_photo .main_functions__proof__text {
-        width: 294px;
+        max-width: 294px;
         margin-bottom: 31px;
     }
 
@@ -227,4 +244,38 @@
         display: none;
     }
 
+}
+
+
+@media(max-width: 375px) {
+    
+    .main_functions__proof {
+        max-width: 320px;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .main_functions__proof_photo, .main_functions__proof_money, .main_functions__proof_location {
+        box-sizing: border-box;
+        max-width: 300px;
+    }
+
+    .main_functions__proof_photo_info, .main_functions__proof_money, .main_functions__proof_location {
+        padding: 20px;
+    }
+
+    .main_functions__proof_svg {
+        max-width: 42px;
+        height: 42px
+    }
+
+    .main_functions__proof_svg img {
+        max-width: 22px;
+        height: 22px;
+    }
+    
+    .main_functions__proof_photo .main_functions__proof__text, .main_functions__proof__text, .main_functions__proof_location .main_functions__proof__text {
+        font-size: 14px;
+        max-width: 200px;
+    }
 }
